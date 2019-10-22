@@ -1,0 +1,78 @@
+.form {
+    background:#fff;
+    border-radius:10rpx;
+    padding:40rpx 30rpx 20rpx;
+}
+
+.form .form-item {
+    display: flex;
+    margin-bottom: 15rpx;
+    line-height: 2;
+    font-size: 28rpx;
+}
+
+.form .form-item .label {
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    width:140rpx;
+    justify-content:flex-end;
+}
+
+.form .form-item input {
+    flex-grow:1;
+    border-bottom:1rpx solid #ddd;
+    padding-left:10rpx;
+    height:60rpx;
+    display:flex;
+    align-items:center;
+}
+
+.form .form-item.fstart {
+    align-items: flex-start;
+    margin-top: 30rpx;
+}
+
+.form .form-item.sub {
+    text-align: right;
+}
+
+.form .form-item textarea {
+    border:1rpx solid #ddd;
+    min-height:100rpx;
+}
+
+.form .desc {
+    display:flex;
+    align-items:flex-start;
+    margin-top:30rpx;
+    font-size:28rpx;
+    margin-bottom: 40rpx;
+}
+
+.form .desc .title {
+    flex-shrink:0;
+    width:140rpx;
+    text-align:right;
+}
+
+.form .desc .content {
+    flex-grow: 1;
+    padding-left: 10rpx;
+}
+
+.form .form-item.sub {
+    display: flex;
+    justify-content: center;
+}
+
+.form .form-item.sub button {
+    font-size:30rpx;
+    line-height:1;
+    margin-top:40rpx;
+    color:#fff;
+    text-align: center;
+    width: 50%;
+    padding: 16rpx 0;
+    border-radius: 30rpx;
+}

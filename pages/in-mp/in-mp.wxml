@@ -1,0 +1,89 @@
+<view class="page">
+  <include src="/components/common/common"></include>
+  <include src="/components/header/header"></include>
+
+  <view class="full-loading" wx:if="{{loading}}">
+    <view class="image"></view>
+  </view>
+
+  <view class="body after-navber" style="height:100vh">
+    <form bindsubmit="applySubmit" reportSubmit="true" wx:if="{{flag == 0 || flag == 1 || flag == 3}}">
+      <view class="fail" wx:if="{{flag == 3}}">
+        <view>※ 审核未通过</view>
+        <view>原因：{{reason}}</view>
+      </view>
+      <view class="input-group-list">
+        <view class="flex flex-row input-group">
+          <view class="flex-grow-0 flex-y-center input-group-label">联系人</view>
+          <view class="flex-grow-1">
+            <input bindinput="bind_input" data-name="linkman" value="{{linkman}}" class="flex-y-center" placeholder="必填" placeholderClass="placeholder" />
+          </view>
+        </view>
+        <view class="flex flex-row input-group">
+          <view class="flex-grow-0 flex-y-center input-group-label">联系电话</view>
+          <view class="flex-grow-1">
+            <input bindinput="bind_input" data-name="tel" value="{{tel}}" type="number" class="flex-y-center" placeholder="必填" placeholderClass="placeholder" maxlength="11" />
+          </view>
+        </view>
+        <view class="flex flex-row input-group">
+          <view class="flex-grow-0 flex-y-center input-group-label">邮箱</view>
+          <view class="flex-grow-1">
+            <input bindinput="bind_input" data-name="email" value="{{email}}" class="flex-y-center" placeholder="必填" placeholderClass="placeholder" />
+          </view>
+        </view>
+        <view class="flex flex-row input-group">
+          <view class="flex-grow-0 flex-y-center input-group-label">营业执照</view>
+          <view class="flex-grow-1">
+            <view class="upload-box">
+              <view bindtap="img_upload" class="upload" wx:if="{{!cert}}">
+                <icon class="iconfont iconjia"/>
+              </view>
+              <view class="img-box" wx:if="{{cert}}">
+                <image src="{{cert}}" mode="widthFix" class="img"></image>
+                <view class="img-de" data-deindex="{{index}}" bindtap="img_remove">
+                  <image src="/images/close.png"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="flex flex-row input-group">
+          <view class="flex-grow-0 flex-y-center input-group-label">套餐</view>
+          <view class="flex-grow-1">
+            <radio-group data-name="taocan" class="taocan" bindchange="radioChange">
+              <label class="radio" wx:for="{{service_list}}" wx:key="index">
+                <radio value="{{item.index}}" checked="{{item.checked}}" checked="{{index == set}}" disabled="{{flag == 3}}" />
+                {{item.name}}
+              </label>
+            </radio-group>
+            <view class="service">
+              <view class="title">服务内容：</view>
+              <view class="content">{{service_list[set].service_content}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <button class="submit-btn" formType="submit" style="margin-top: 45rpx;">下一步</button>
+    </form>
+    <view class="in-mp" wx:if="{{flag == 2 || flag == 4}}">
+      <block wx:if="{{flag == 4}}">
+        <view class="status-box">
+          <icon type="success" size="60" />
+          <view class="text">
+            您已入驻小程序，您的套餐为
+            <block wx:if="{{set == 0}}">A套餐(¥19)</block>
+            <block wx:if="{{set == 1}}">B套餐(¥20)</block>
+            <block wx:if="{{set == 2}}">C套餐(¥21)</block>
+          </view>
+        </view>
+      </block>
+      <block wx:if="{{flag == 2}}">
+        <view class="status-box">
+          <icon type="waiting" size="60" />
+          <view class="text">审核中，请耐心等待</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <include src="/components/footer/footer"></include>
+</view>

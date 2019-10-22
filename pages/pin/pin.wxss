@@ -1,0 +1,77 @@
+.page {
+  /* background: url('http://my_library.123456371.xyz/temp/bg.jpg'); */
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 38rpx;
+}
+
+.nine {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #fff;
+}
+
+.nine .image-box {
+  width: 30%;
+  flex-grow: 1;
+  height: 28vh;
+  border: 1px solid #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.nine .image-box image {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.nine .image-box .shadow {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.start {
+  width: 26vh;
+  font-size: 34rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 29rpx;
+  background: #fcebd7;
+  color: #49382f;
+}
+
+.start-count {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-count .count-down {
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5rpx 4rpx #ddd;
+  border-radius: 50%;
+  background: #fcebd7;
+  color: #49382f;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}

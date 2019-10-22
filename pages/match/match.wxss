@@ -1,0 +1,25 @@
+page {
+    padding: 15rpx 30rpx;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40rpx;
+}
+
+.content {
+    margin-top: 45rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.content image {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.foot-btn {
+    margin-bottom:30rpx;
+}

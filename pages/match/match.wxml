@@ -1,0 +1,12 @@
+<view>
+  <!-- 现在当做详情页来用了 -->
+  <view class="title">
+    {{article.title}}
+  </view>
+  <view class="content">
+    <import src="../../wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:rich_text.nodes}}"/>
+  </view>
+
+  <button bindgetuserinfo="to_tiyan" open-type="getUserInfo" type="primary" class="foot-btn">立即体验</button>
+</view>

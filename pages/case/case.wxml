@@ -1,0 +1,10 @@
+<view>
+  <!-- 现在当做详情页来用了 -->
+  <view class="title">
+    {{case.title}}
+  </view>
+  <view class="content">
+    <import src="../../wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:rich_text.nodes}}"/>
+  </view>
+</view>

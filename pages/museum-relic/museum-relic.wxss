@@ -1,0 +1,56 @@
+.museum {
+    background: linear-gradient(to bottom, #56575c, #a9aaae);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.museum .title {
+    position:fixed;
+    top:44rpx;
+    text-align:center;
+    width:100%;
+    color:#fff;
+    font-size:34rpx;
+}
+
+.museum image {
+    width: 100%;
+}
+
+.museum .btn-box {
+    position:fixed;
+    bottom: 50rpx;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50rpx;
+}
+
+.museum .icon-box {
+    width:100rpx;
+    height:100rpx;
+    background:#fff;
+    border-radius:50%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.museum .icon-box .iconfont {
+    font-size:45rpx;
+    font-weight:bold;
+    position:relative;
+    top:-3rpx;
+    color: #666;
+}
+
+.museum .icon-box .iconfanhui {
+    font-size: 50rpx;
+}
+
+.museum .icon-box .iconfenxiang {
+    top: 0;
+}

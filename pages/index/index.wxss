@@ -1,0 +1,293 @@
+.top {
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+}
+
+.top.fixed {
+    position: fixed;
+}
+
+.top .hr {
+    border-bottom:1rpx solid #ddd;
+    margin-bottom: 15rpx;
+}
+
+.top-swiper {
+    height: 370rpx;
+    width: 100%;
+}
+
+.top-swiper swiper-item {
+    padding: 20rpx 29rpx;
+    box-sizing: border-box;
+    border-radius: 20rpx;
+    overflow: visible;
+}
+
+.top-swiper swiper-item image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20rpx;
+    transition: 0.3s all;
+}
+
+.top-swiper swiper-item image.current {
+    transform: scale(1.1);
+}
+
+.tab {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20rpx;
+    padding: 0 40rpx;
+}
+
+.tab .tab-item {
+    text-align: center;
+    padding-bottom: 10rpx;
+    min-width: 100rpx;
+}
+
+.tab .tab-item.active {
+    border-bottom: 4rpx solid #ffaa10;
+    color: #ff6f00;
+}
+
+.tab .tab-item image {
+    width: 60rpx;
+    height: 60rpx;
+    vertical-align: bottom;
+}
+
+.tab .tab-item view {
+    margin-top: 5rpx;
+}
+
+.tab-content {
+    padding-top:15rpx;
+    margin:0 15rpx;
+}
+
+.wc {
+    padding: 0 25rpx;
+}
+
+.wc-item {
+    padding: 20rpx 0;
+}
+
+.wc-item .title {
+    text-align:center;
+    font-size: 50rpx;
+    font-weight: 300;
+}
+
+.wc-item .hr {
+    width:150rpx;
+    border-top:1rpx solid #ccc;
+    margin:35rpx auto 0;
+}
+
+.wc-item .sub-title {
+    text-align:center;
+    color:#666;
+    margin-top:34rpx;
+}
+
+.wc-item .sub-title + .navigator-hover {
+    background: transparent;
+}
+
+.wc-item image {
+    width: 100%;
+    margin-top: 42rpx;
+}
+
+.wc-item .tag-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 27rpx;
+}
+
+.wc-item .tag-box .tag {
+    padding: 10rpx 15rpx;
+    margin-right: 25rpx;
+    border: 1rpx solid #333;
+    margin-bottom: 25rpx;
+}
+
+.wc .example {
+    margin-top: 30rpx;
+}
+
+.wc .example > .title {
+    font-size:33rpx;
+}
+
+.wc .example > .title .hr {
+    width:150rpx;
+    border-top:1rpx solid #666;
+    margin-top:10rpx;
+}
+
+.wc .example .example-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35rpx;
+}
+
+.wc .example .example-item {
+    width: 48%;
+    margin-bottom: 35rpx;
+}
+
+.wc .example .example-item .title {
+    font-size: 28rpx;
+    text-align: center;
+    margin-top: 5rpx;
+}
+
+.wc .example .example-item image {
+    border-radius: 6rpx;
+    width: 100%;
+    height: 300rpx;
+}
+
+.wc .platform {
+    margin-top: 40rpx;
+}
+
+.wc .platform > .title {
+    font-size:33rpx;
+    margin-bottom:35rpx;
+}
+
+.wc .platform > .title .hr {
+    width:150rpx;
+    border-top:1rpx solid #666;
+    margin-top:10rpx;
+}
+
+.wc .two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wc .platform .platform-item {
+    margin-bottom:30rpx;
+    width:49%;
+}
+
+.wc .platform .platform-item:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.wc .platform .platform-item .title {
+    font-size: 28rpx;
+    text-align: center;
+}
+
+.wc .platform .platform-item image {
+    margin-top: 10rpx;
+    border-radius: 6rpx;
+    width: 100%;
+    height: 300rpx;
+}
+
+.zh {
+    padding: 0 25rpx;
+}
+
+.zh .start {
+    margin-top: 20rpx;
+}
+
+.zh .start .title {
+    font-size: 35rpx;
+}
+
+.zh .start .title .hr {
+    width:150rpx;
+    border-top:1rpx solid #666;
+    margin-top:10rpx;
+}
+
+.zh .start navigator {
+    margin-top: 30rpx;
+}
+
+.zh .start navigator image {
+    width: 100%;
+}
+
+.zh .zh-item {
+    margin-top: 40rpx;
+}
+
+.zh .zh-item .title {
+    font-size: 28rpx;
+}
+
+.zh .zh-item navigator {
+    margin-top: 20rpx;
+}
+
+.zh .zh-item navigator image {
+    width: 100%;
+    border-radius: 6rpx;
+    height: 350rpx;
+}
+
+.mp {
+    padding: 20rpx 25rpx;
+}
+
+.mp video {
+    width:100%;
+    height:382rpx;
+    margin-bottom:40rpx;
+    border-radius:15rpx;
+}
+
+.mp .mp-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mp .mp-box .mp-item {
+    width:211rpx;
+    margin-right:20rpx;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35rpx;
+}
+
+.mp .mp-box .mp-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.mp .mp-box .mp-item image {
+    width: 120rpx;
+    height: 120rpx;
+    vertical-align: bottom;
+}
+
+.mp .mp-box .mp-item .title {
+    margin-top: 15rpx;
+}
+
+.mp .long {
+    padding-bottom: 30rpx;
+}
+
+.mp .long image {
+    width: 100%;
+    display: block;
+}

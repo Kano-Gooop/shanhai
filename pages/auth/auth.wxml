@@ -1,0 +1,8 @@
+<view class="full-loading" wx:if="{{full_loading}}">
+  <view class="image"></view>
+</view>
+
+<view class="auth-box" wx:if="{{!auth}}" style="padding-top: {{statusBarHeight + topBarHeight}}px;">
+  <view class="authorize-text">请您先授权</view>
+  <button bindgetuserinfo="auth" open-type="getUserInfo">授权后查看</button>
+</view>

@@ -1,0 +1,15 @@
+<view class="museum">
+  <view class="title">{{voice.title}}</view>
+  <image src="{{voice.pic}}" mode="widthFix"></image>
+  <view class="btn-box">
+    <view bindtap="back_home" class="icon-box">
+      <icon class="iconfont iconfanhui"/>
+    </view>
+    <view bindtap="play" class="icon-box">
+      <icon class="iconfont iconerji"/>
+    </view>
+    <button open-type="share" class="icon-box">
+      <icon class="iconfont iconfenxiang"/>
+    </button>
+  </view>
+</view>

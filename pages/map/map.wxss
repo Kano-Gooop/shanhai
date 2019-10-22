@@ -1,0 +1,19 @@
+/* pages/map/map.wxss */
+.map-box{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+}
+
+.map-tip{
+	display: block;
+	text-align: center;
+	font-size: 40rpx;
+	margin: 50rpx 0;
+}
+.btnAuth {
+	margin: 0 30rpx;
+}

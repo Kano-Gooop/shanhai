@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/auth/auth",
+    "pages/pin_index/pin_index",
+    "pages/pin/pin",
+    "pages/index/index",
+    "pages/news/news",
+    "pages/museum-relic/museum-relic",
+    "pages/about/about",
+    "pages/match/match",
+    "pages/in-mp/in-mp",
+    "pages/in-mp2/in-mp2",
+    "pages/tiyan/tiyan",
+    "pages/museum/museum",
+    "pages/case/case",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于我们"
+      }
+    ]
+  },
+  "plugins": {
+    "myPlugin": {
+      "version": "1.0.6",
+      "provider": "wx5bc2ac602a747594"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序获取您当前所在的位置"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

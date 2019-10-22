@@ -1,0 +1,264 @@
+.block-button {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    background: none;
+}
+
+.block-button:after {
+    display: none;
+}
+
+.placeholder {
+    color: #aaa;
+}
+
+.form-group-name {
+    color: #888;
+    padding: 32rpx 0 8rpx 32rpx;
+}
+
+.input-group {
+    background: #fff;
+    position: relative;
+}
+
+.input-group .input-group-label {
+    padding: 0 32rpx;
+    line-height: inherit;
+    min-width: 200rpx;
+    white-space: nowrap;
+}
+
+.input-group picker,.input-group input {
+    height: 100%;
+    width: 100%;
+    padding: 0 32rpx;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.input-group-list {
+    border-top: 1rpx solid #e9e9e9;
+    border-bottom: 1rpx solid #e9e9e9;
+}
+
+.input-group-list .input-group:after {
+    display: block;
+    content: " ";
+    height: 0;
+    border-bottom: 1rpx solid #eee;
+    position: absolute;
+    bottom: 0;
+    left: 32rpx;
+    right: 32rpx;
+}
+
+.input-group-list .input-group:last-child:after {
+    display: none;
+}
+
+.submit-btn {
+    background: #ff4544;
+    border-radius: 8rpx;
+    color: #fff;
+    margin: 64rpx 32rpx 20rpx;
+}
+
+.apply-result {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 10;
+    transition: 200ms;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding: 150rpx 95rpx;
+}
+
+.apply-result.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.apply-result .review-status {
+    margin-bottom: 12rpx;
+    font-size: 13pt;
+}
+
+.apply-result .status-0 {
+}
+
+.apply-result .status-1 {
+    color: #1aa349;
+}
+
+.apply-result .status-2 {
+}
+
+.apply-result .review-result {
+    margin-bottom: 64rpx;
+}
+
+.view-data-btn {
+    color: #387ee8;
+}
+
+.entry-rules {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+    padding: 50rpx;
+}
+
+.rules-container {
+    background: #fff;
+    border-radius: 8rpx;
+    overflow: hidden;
+}
+
+.rules-container text {
+    max-width: 100%;
+}
+
+.rules-container .rules-btn {
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    border-top: 1rpx solid #e3e3e3;
+    border-right: 1rpx solid #e3e3e3;
+}
+
+.rules-container .rules-btn:last-child {
+    border-right: none;
+}
+
+/* 我写的 */
+.input-group-list {
+    padding-bottom:30rpx;
+    background:#fff;
+    border-top: none;
+}
+
+.input-group {
+    min-height: 80rpx;
+}
+
+.input-group .upload-box {
+    padding: 25rpx 0;
+}
+
+.input-group .upload {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid #ddd;
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.input-group .upload .iconfont {
+    font-size: 50rpx;
+}
+
+.input-group .upload-box {
+}
+
+.input-group .upload-box .img-box {
+    display: inline-block;
+    position: relative;
+}
+
+.input-group .upload-box .img {
+    width: 300rpx;
+    vertical-align: bottom;
+}
+
+.input-group .upload-box .img-de {
+    width:40rpx;
+    height:40rpx;
+    border-radius:50%;
+    position:absolute;
+    right:-10px;
+    top:-11rpx;
+    z-index:1;
+}
+
+.input-group .upload-box .img-de image {
+    width: 100%;
+    height: 100%;
+}
+
+.input-group .taocan {
+    padding: 20rpx 0;
+}
+
+.input-group .taocan label {
+    display: block;
+    margin-bottom: 15rpx;
+}
+
+.input-group .taocan label:last-child {
+    margin-bottom: 0;
+}
+
+.input-group .service {
+    padding: 10rpx 15rpx;
+    box-sizing:border-box;
+    box-shadow:0 0 15rpx #666 inset;
+    width:90%;
+    margin-top:13rpx;
+    font-size:26rpx;
+    line-height:1.8;
+}
+
+.input-group .service .title {
+    font-size: 28rpx;
+    font-weight: bold;
+}
+
+.input-group .service .content {
+    white-space: pre;
+}
+
+page {
+    background: #fff;
+}
+
+.in-mp {
+    text-align: center;
+    padding-top: 30rpx;
+}
+
+.navi-box navigator {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.status-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60rpx 0;
+}
+
+.status-box .text {
+    font-size: 30rpx;
+    margin-top: 40rpx;
+    font-weight: bold;
+}
+
+.fail {
+    color:red;
+    margin-left:32rpx;
+    padding:10rpx 0;
+}

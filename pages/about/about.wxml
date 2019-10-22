@@ -1,0 +1,15 @@
+<view class="tabbar-page">
+  <view class="title">
+    {{aboutUs.name}}
+  </view>
+  <view class="content">
+    <import src="../../wxParse/wxParse.wxml" />
+    <template is="wxParse" data="{{wxParseData:rich_text.nodes}}" />
+  </view>
+
+  <map id="map" data-longitude='{{longitude}}' data-latitude='{{latitude}}' longitude="{{longitude}}" latitude="{{latitude}}" bindmarkertap='comeHere' scale="14" markers="{{markers}}" show-location></map>
+  <view class="info">
+    <view class="line">联系人：{{aboutUs.linkman}}</view>
+    <view class="line">联系电话：{{aboutUs.tel}}</view>
+  </view>
+</view>

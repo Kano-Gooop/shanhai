@@ -1,0 +1,21 @@
+<view class="wc-page">
+  <view class="wc-item" wx:for="{{articleList}}" wx:key="id">
+    <view class="title">{{item.title}}</view>
+    <view class="hr"></view>
+    <view class="sub-title">{{item.desc}}</view>
+    <navigator url="/pages/match/match?id={{item.id}}">
+      <image src="{{item.pic}}" mode="widthFix"></image>
+    </navigator>
+    <view class="tag-box">
+      <view class="tag" wx:for="{{item.tag_list}}" wx:for-item="tag" wx:key="index">{{tag.tag_name}}</view>
+    </view>
+  </view>
+
+  <view class="nomore tabbar" wx:if="{{nomore}}">
+    已经没有更多了哦
+  </view>
+
+  <view class="nodata tabbar" wx:if="{{nodata}}">
+    暂无笔记
+  </view>
+</view>

@@ -1,0 +1,138 @@
+<view class="page tabbar-page">
+  <div class="top {{top_fixed ? 'fixed' : ''}}" style="top: {{page_top}}px;">
+    <swiper
+      autoplay="{{swiper.autoplay}}"
+      interval="{{swiper.interval}}"
+      duration="{{swiper.duration}}"
+      circular="{{swiper.circular}}"
+      previous-margin="52rpx"
+      next-margin="52rpx"
+      class="top-swiper"
+      bindchange="swiper_change"
+    >
+      <swiper-item wx:for="{{swiper.image_list}}" wx:key="id">
+        <image bindtap="jump" data-index="{{index}}" src="{{item.pic}}" class="{{swiper.current == index ? 'current' : ''}}" />
+      </swiper-item>
+    </swiper>
+
+    <view class="tab">
+      <view bindtap="tab_change" data-tab="{{1}}" class="tab-item {{tab == 1 ? 'active' : ''}}">
+        <image src="/icons/ci.png"></image>
+        <view>享文创</view>
+      </view>
+      <view bindtap="tab_change" data-tab="{{2}}" class="tab-item {{tab == 2 ? 'active' : ''}}">
+        <image src="/icons/zhi.png"></image>
+        <view>智慧云</view>
+      </view>
+      <view bindtap="tab_change" data-tab="{{3}}" class="tab-item {{tab == 3 ? 'active' : ''}}">
+        <image src="/icons/mp.png"></image>
+        <view>小程序</view>
+      </view>
+    </view>
+
+    <view class="hr"></view>
+  </div>
+
+  <view class="tab-content" style="padding-top: {{padding_top}}px;">
+    <!-- 文创 -->
+    <view class="wc" wx:if="{{tab == 1}}">
+      <view class="wc-item">
+        <view class="title">齐白石数字文创</view>
+        <view class="hr"></view>
+        <view class="sub-title">由此爱上文创</view>
+        <navigator url="/pages/pin_index/pin_index">
+          <image src="/images/qi_banner.jpg" mode="widthFix"></image>
+        </navigator>
+      </view>
+
+      <view class="wc-item">
+        <view class="title">{{home_article.title}}</view>
+        <view class="hr"></view>
+        <view class="sub-title">{{home_article.desc}}</view>
+        <navigator url="/pages/match/match?id={{home_article.id}}">
+          <image src="{{home_article.pic}}" mode="widthFix"></image>
+        </navigator>
+        <view class="tag-box">
+          <view class="tag" wx:for="{{home_article.tag_list}}" wx:key="index">{{item.tag_name}}</view>
+        </view>
+      </view>
+
+      <view class="example">
+        <view class="title">
+          案例
+          <view class="hr"></view>
+        </view>
+        <view class="example-box">
+          <navigator url="/pages/case/case?id={{item.id}}" class="example-item" wx:for="{{case_list}}" wx:key="id">
+            <image src="{{item.pic}}" mode="aspectFill" lazy-load="{{true}}"></image>
+            <view class="title">
+              {{item.title}}
+            </view>
+          </navigator>
+        </view>
+      </view>
+
+      <view class="platform">
+        <view class="title">
+          合作伙伴
+          <view class="hr"></view>
+        </view>
+        <view class="two">
+          <view class="platform-item" wx:for="{{partner_list}}" wx:key="index">
+            <view class="title">
+              {{item.title}}
+            </view>
+            <image src="{{item.pic}}" mode="widthFix" lazy-load="{{true}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 智慧 -->
+    <view class="zh" wx:if="{{tab == 2}}">
+      <view class="start">
+        <view class="title">
+          360°交互
+          <view class="hr"></view>
+        </view>
+        <navigator url="">
+          <image src="{{star_relic.pic}}" mode="widthFix" lazy-load="{{true}}"></image>
+        </navigator>
+      </view>
+      <view class="zh-item" wx:for="{{museum_list}}" wx:key="id">
+        <view class="title">{{item.title}}</view>
+        <navigator url="/pages/museum/museum?id={{item.id}}">
+          <image src="{{item.pic}}" mode="aspectFill" lazy-load="{{true}}"></image>
+        </navigator>
+      </view>
+    </view>
+
+    <!-- 小程序  -->
+    <view class="mp" wx:if="{{tab == 3}}">
+      <video
+        id="video{{index}}"
+        src="{{item.video_url}}"
+        show-fullscreen-btn="{{false}}"
+        poster="{{item.poster}}"
+        controls
+        data-index="{{index}}"
+        bindplay="play"
+        wx:for="{{video}}"
+        wx:key="index"
+      ></video>
+
+      <view class="long">
+        <image wx:for="{{longImg}}" wx:key="index" src="{{item}}" mode="widthFix"></image>
+      </view>
+
+      <view class="mp-box">
+        <view class="mp-item" wx:for="{{minipro}}" wx:key="id">
+          <image src="{{item.pic}}" lazy-load="{{true}}"></image>
+          <view class="title">{{item.title}}</view>
+        </view>
+      </view>
+
+      <button bindgetuserinfo="to_tiyan" open-type="getUserInfo" type="primary" class="foot-btn">立即体验</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="page">
+  <view class="four">
+    <view bindtap="choose" data-index="{{0}}" class="img-box {{active_index == 0 ? 'active' : ''}}">
+      <image src="/pin_images/1.jpg" mode="aspectFill"></image>
+      <view class="title">齐白石画1</view>
+    </view>
+    <view bindtap="choose" data-index="{{1}}" class="img-box {{active_index == 1 ? 'active' : ''}}">
+      <image src="/pin_images/2.jpg" mode="aspectFill"></image>
+      <view class="title">齐白石画2</view>
+    </view>
+    <view bindtap="choose" data-index="{{2}}" class="img-box {{active_index == 2 ? 'active' : ''}}">
+      <image src="/pin_images/3.jpg" mode="aspectFill"></image>
+      <view class="title">齐白石画3</view>
+    </view>
+    <view bindtap="choose" data-index="{{3}}" class="img-box {{active_index == 3 ? 'active' : ''}}">
+      <image src="/pin_images/4.jpg" mode="aspectFill"></image>
+      <view class="title">齐白石画4</view>
+    </view>
+  </view>
+  <button bindtap="to_pin" class="start {{active_index == 0 ? '' : 'disabled'}}">开始游戏</button>
+</view>

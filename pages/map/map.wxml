@@ -1,0 +1,7 @@
+<view class='map-box' style='{{flag == 1?"display:block":"display:none"}}'>
+  <map-route route-info="{{routeInfo}}"></map-route>
+</view>
+<view class='map-box' style='{{flag == 2?"display:block":"display:none"}}'>
+  <text class='map-tip'>请您先授权获取位置信息</text>
+  <button class='btnAuth' bindtap='userLocation'>点击重新获取位置信息</button>
+</view>

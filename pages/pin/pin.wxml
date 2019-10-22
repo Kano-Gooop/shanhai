@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="nine">
+    <view bindtap="pin" data-index="{{index}}" class="image-box" wx:for="{{pin_list}}" wx:key="index" style="order: {{item.order}};">
+      <image src="{{item.image}}"></image>
+      <view class="shadow" wx:if="{{choose_index == index}}"></view>
+    </view>
+  </view>
+  <button bindtap="start" class="start" wx:if="{{status == 0 || status == 1 || status == 3}}">{{start_text}}</button>
+  <button class="start" wx:if="{{status == 2}}">{{pin_count}}</button>
+
+  <view class="start-count" wx:if="{{status == 1}}">
+    <view class="count-down">{{start_count}}</view>
+  </view>
+</view>

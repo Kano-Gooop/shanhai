@@ -1,0 +1,72 @@
+@import 'utils/iconfont.wxss';
+
+@import 'wxParse/wxParse.wxss';
+
+page {
+    font-size: 24rpx;
+    color: #333;
+}
+
+.tabbar-page {
+    padding-bottom: 140rpx;
+}
+
+.foot-btn {
+    width:60%;
+    font-size:28rpx;
+    margin-top:40rpx;
+}
+
+.nomore, .nodata {
+    padding: 20rpx 0;
+    text-align: center;
+    color: #bbb;
+    font-size: 24rpx;
+}
+
+.nomore.tabbar, .nodata.tabbar {
+    padding-bottom: 140rpx;
+}
+
+.full-loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 1500;
+}
+
+.full-loading .image {
+    width: 155px;
+    height: 155px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: calc(50% - 220rpx);
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibGRzLW1lc3NhZ2UiIHdpZHRoPSIxNTVweCIgIGhlaWdodD0iMTU1cHgiICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiIHN0eWxlPSJiYWNrZ3JvdW5kOiBub25lOyI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjUgNTApIj4KPGNpcmNsZSBjeD0iMCIgY3k9IjAiIHI9IjYiIGZpbGw9IiM3NzcwNmIiIHRyYW5zZm9ybT0ic2NhbGUoMSAxKSI+CiAgPGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJzY2FsZSIgYmVnaW49Ii0wLjMzMzMzMzMzMzMzMzMzMzNzIiBjYWxjTW9kZT0ic3BsaW5lIiBrZXlTcGxpbmVzPSIwLjMgMCAwLjcgMTswLjMgMCAwLjcgMSIgdmFsdWVzPSIwOzE7MCIga2V5VGltZXM9IjA7MC41OzEiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48L2FuaW1hdGVUcmFuc2Zvcm0+CjwvY2lyY2xlPgo8L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTAgNTApIj4KPGNpcmNsZSBjeD0iMCIgY3k9IjAiIHI9IjYiIGZpbGw9IiM3NzcwNmIiIHRyYW5zZm9ybT0ic2NhbGUoMC43MzExMzIgMC43MzExMzIpIj4KICA8YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InNjYWxlIiBiZWdpbj0iLTAuMTY2NjY2NjY2NjY2NjY2NjZzIiBjYWxjTW9kZT0ic3BsaW5lIiBrZXlTcGxpbmVzPSIwLjMgMCAwLjcgMTswLjMgMCAwLjcgMSIgdmFsdWVzPSIwOzE7MCIga2V5VGltZXM9IjA7MC41OzEiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48L2FuaW1hdGVUcmFuc2Zvcm0+CjwvY2lyY2xlPgo8L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzUgNTApIj4KPGNpcmNsZSBjeD0iMCIgY3k9IjAiIHI9IjYiIGZpbGw9IiM3NzcwNmIiIHRyYW5zZm9ybT0ic2NhbGUoMC4yNjg4NjggMC4yNjg4NjgpIj4KICA8YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InNjYWxlIiBiZWdpbj0iMHMiIGNhbGNNb2RlPSJzcGxpbmUiIGtleVNwbGluZXM9IjAuMyAwIDAuNyAxOzAuMyAwIDAuNyAxIiB2YWx1ZXM9IjA7MTswIiBrZXlUaW1lcz0iMDswLjU7MSIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiPjwvYW5pbWF0ZVRyYW5zZm9ybT4KPC9jaXJjbGU+CjwvZz48L3N2Zz4=");
+}
+
+/* 授权框 start */
+.auth-box .authorize-text {
+    font-size: 28rpx;
+    text-align: center;
+    padding-top: 30rpx;
+}
+
+.auth-box button {
+    width: 50%;
+    font-size: 28rpx;
+    padding: 0;
+    line-height: 2.5;
+    background: #8e97b4;
+    margin-top: 40rpx;
+    color: #fff;
+}
+
+.auth-box button:active {
+    opacity: 0.8;
+}
+/* 授权框 end */

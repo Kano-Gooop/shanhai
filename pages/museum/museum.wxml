@@ -1,0 +1,47 @@
+<view>
+  <swiper
+    indicator-dots="{{true}}"
+    autoplay="{{swiper.autoplay}}"
+    circular="{{swiper.circular}}"
+    class="top-swiper"
+    wx:if="{{slidelist.length > 0}}"
+  >
+    <swiper-item wx:for="{{slidelist}}" wx:key="id">
+      <navigator url="/pages/museum-relic/museum-relic?id={{item.id}}">
+        <image src="{{item.pic}}" mode="aspectFit" />
+      </navigator>
+    </swiper-item>
+  </swiper>
+
+  <view class="info" style="{{slidelist.length == 0 ? 'margin-top: 0;' : ''}}">
+    <view class="title">{{museum.title}}</view>
+    <view class="address">{{museum.address}}</view>
+    <view class="content">
+      <import src="../../wxParse/wxParse.wxml"/>
+      <template is="wxParse" data="{{wxParseData:rich_text.nodes}}"/>
+    </view>
+  </view>
+
+  <map
+    id="map"
+    longitude="{{longitude}}"
+    latitude="{{latitude}}"
+    scale="14"
+    markers="{{markers}}"
+    show-location
+  ></map>
+  <view class="info2">
+    <view class="item-line">
+      <icon class="iconfont iconaddress"></icon>
+      {{museum.address}}
+    </view>
+    <view class="item-line">
+      <icon class="iconfont iconjin"></icon>
+      门票价格 {{museum.ticket_price == '0.00' ? '免费' : '¥' + museum.ticket_price}}
+    </view>
+    <view class="item-line">
+      <icon class="iconfont iconGroupx"></icon>
+      开放时间 {{museum.hours}}
+    </view>
+  </view>
+</view>

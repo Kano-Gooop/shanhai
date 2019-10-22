@@ -1,0 +1,82 @@
+.top-swiper {
+  height: 420rpx;
+}
+
+.top-swiper swiper-item {
+  display: flex;
+  justify-content: center;
+}
+
+.top-swiper swiper-item navigator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.top-swiper swiper-item image {
+  margin: 0 auto;
+  width: 90%;
+  height: 84%;
+  border-radius: 15rpx;
+  box-shadow: 0 0 20rpx #666;
+  background: rgb(216, 215, 220);
+  margin-top: 14rpx;
+}
+
+.info {
+  margin-top: 42rpx;
+  text-align: center;
+  padding: 0 25rpx;
+  font-size: 22rpx;
+  color: #666;
+}
+
+.info .title {
+  font-size: 45rpx;
+  color: #333;
+}
+
+.info .address {
+  margin-top: 15rpx;
+}
+
+.info .content {
+  margin-top: 25rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.info .content image {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+map {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 400rpx;
+}
+
+.info2 {
+  margin-top: 6rpx;
+  color: #666;
+  font-size: 26rpx;
+  padding-bottom: 25rpx;
+}
+
+.info2 .item-line {
+  padding: 10rpx 20rpx;
+  line-height: 1.4;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.info2 .item-line:last-child {
+  border-bottom: 0;
+}
+
+.info2 .item-line .iconfont {
+  font-size: 34rpx;
+  vertical-align: -2rpx;
+  margin-right: 10rpx;
+  color: #999;
+}

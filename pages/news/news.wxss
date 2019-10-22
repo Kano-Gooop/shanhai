@@ -1,0 +1,51 @@
+.wc-page {
+    padding: 0 35rpx;
+}
+
+.wc-item {
+    padding: 20rpx 0;
+}
+
+.wc-item .title {
+    text-align:center;
+    font-size: 50rpx;
+    font-weight: 300;
+}
+
+.wc-item .hr {
+    width:150rpx;
+    border-top:1rpx solid #ccc;
+    margin:35rpx auto 0;
+}
+
+.wc-item .sub-title {
+    text-align:center;
+    color:#666;
+    margin-top:34rpx;
+}
+
+.wc-item .sub-title + .navigator-hover {
+    background: transparent;
+}
+
+.wc-item image {
+    width: 100%;
+    margin-top: 42rpx;
+}
+
+.wc-item .tag-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 27rpx;
+}
+
+.wc-item .tag-box .tag {
+    padding: 10rpx 15rpx;
+    margin-right: 25rpx;
+    border: 1rpx solid #333;
+    margin-bottom: 25rpx;
+}
+
+.nomore.tabbar, .nodata.tabbar {
+    padding-bottom: 150rpx;
+}
