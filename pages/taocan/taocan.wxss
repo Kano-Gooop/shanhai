@@ -1,0 +1,109 @@
+view {
+  overflow: visible;
+}
+
+.page {
+  min-height: 100vh;
+  border-top: 2rpx solid rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+  padding: 24rpx 24rpx 50rpx;
+  line-height: 1;
+}
+
+.top-img {
+  width: 100%;
+  background: #f0f0f0;
+}
+
+.form {
+  margin-top: 30rpx;
+}
+
+.form .form-item:first-child {
+  margin-top: 0;
+}
+
+.form .form-item {
+  margin-top: 14rpx;
+  border-radius: 8rpx;
+  border: solid 2rpx #e5e5e5;
+  font-size: 34rpx;
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  box-sizing: border-box;
+}
+
+.form .form-item .label {
+  width: 187rpx;
+  color: #000;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  flex-shrink: 0;
+}
+
+.form .form-item .item-right {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+.form .form-item .item-right input {
+  color: #666;
+}
+
+.form .form-item .item-right .sms-button {
+  font-size: 28rpx;
+  color: #fff;
+  background: #09bb07;
+  width: 183rpx;
+  padding: 0;
+  border: 0;
+  align-self: stretch;
+  border-radius: 0 8rpx 8rpx 0;
+  margin: -1rpx -2rpx -1rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form .form-item .item-right .sms-button[disabled] {
+  background: #bbb;
+  color: #fff;
+}
+
+.form .form-item .item-right .sms-button::after {
+  display: none;
+}
+
+.confirm-btn {
+  margin: 70rpx 6rpx 0;
+  padding: 0;
+  border: solid 2rpx #e5e5e5;
+  border-radius: 8rpx;
+  color: #fff;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 36rpx;
+  background: #09bb07;
+}
+
+.my-order {
+  width: 125rpx;
+  margin: 14rpx 0 0 auto;
+  padding: 0;
+  border: 0;
+  border-bottom: 2rpx solid #09bb07;
+  border-radius: 0;
+  font-size: 28rpx;
+  color: #09bb07;
+  line-height: 46rpx;
+  background: transparent;
+  text-align: center;
+}
+
+.my-order::after {
+  display: none;
+}

@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/test/test",
     "pages/auth/auth",
+    "pages/test/test",
     "pages/pin_index/pin_index",
     "pages/pin/pin",
     "pages/index/index",
@@ -14,6 +14,8 @@
     "pages/tiyan/tiyan",
     "pages/museum/museum",
     "pages/case/case",
+    "pages/taocan/taocan",
+    "pages/taocan-order/taocan-order",
     "pages/map/map"
   ],
   "window": {
@@ -44,7 +46,7 @@
   },
   "plugins": {
     "myPlugin": {
-      "version": "1.0.6",
+      "version": "1.0.7",
       "provider": "wx5bc2ac602a747594"
     }
   },

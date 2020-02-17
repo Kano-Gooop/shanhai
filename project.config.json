@@ -30,13 +30,36 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "套餐",
+					"pathName": "pages/auth/auth",
+					"query": "route=pages/taocan/taocan",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "套餐订单",
+					"pathName": "pages/auth/auth",
+					"query": "route=pages/taocan-order/taocan-order",
+					"scene": null
+				}
+			]
 		}
 	}
 }

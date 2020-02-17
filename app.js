@@ -1,3 +1,5 @@
+const utils = require('utils/utils.js');
+
 App({
   onLaunch: function () {
   },
@@ -22,6 +24,11 @@ App({
     })
   },
   ajax(path, data, succ, err, complete) {
+    data = data || {};
+    if (!data.token) {
+      data.token = this.user_data.token;
+    }
+
     let that = this;
 
     wx.request({
@@ -176,4 +183,27 @@ App({
       }
     }
   },
+  bind_input(e, page) {
+    page.setData({
+      [e.currentTarget.dataset['name']]: e.detail.value || ''
+    })
+  },
+  // 时间格式化
+  format_time(obj, field, fmt) {
+    if (obj instanceof Array) {
+      for (let i = 0; i < obj.length; i++) {
+        if (fmt) {
+          obj[i][field] = utils.date_format(obj[i][field], fmt);
+        } else {
+          obj[i][field] = utils.date_format(obj[i][field]);
+        }
+      }
+    } else {
+      if (fmt) {
+        obj[field] = utils.date_format(obj[field], fmt);
+      } else {
+        obj[field] = utils.date_format(obj[field]);
+      }
+    }
+  }
 });

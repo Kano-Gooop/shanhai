@@ -1,0 +1,30 @@
+<view class="full-loading" wx:if="{{full_loading}}">
+  <view class="image"></view>
+</view>
+
+<view class="page">
+  <image src="https://www.caves.vip/static/sh/fuwu.jpg" mode="widthFix" class="top-img"></image>
+  <view class="form">
+    <view class="form-item">
+      <view class="label">姓名</view>
+      <view class="item-right">
+        <input bindinput="bind_input" data-name="name" value="{{name}}" type="text" placeholder="请输入联系人姓名"/>
+      </view>
+    </view>
+    <view class="form-item">
+      <view class="label">手机号</view>
+      <view class="item-right">
+        <input bindinput="bind_input" data-name="tel" value="{{tel}}" type="number" placeholder="请输入联系人手机号" maxlength="11" />
+        <button bindtap="sendSms" class="sms-button" disabled="{{code_disabled}}">{{code_text}}</button>
+      </view>
+    </view>
+    <view class="form-item">
+      <view class="label">验证码</view>
+      <view class="item-right">
+        <input bindinput="bind_input" data-name="code" value="{{code}}" type="number" placeholder="请输入验证码" maxlength="6"/>
+      </view>
+    </view>
+    <button bindtap="order" class="confirm-btn">立即支付</button>
+    <navigator wx:if="{{is_pay}}" url="/pages/taocan-order/taocan-order" class="my-order">我的订单</navigator>
+  </view>
+</view>

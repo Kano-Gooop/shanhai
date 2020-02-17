@@ -63,5 +63,10 @@ Page({
       rich_text = rich_text.replace(/\/ueditor\/php\/upload\//g, app.my_config.base_url.substr(0, app.my_config.base_url.length - 1) + '/ueditor/php/upload/');
       WxParse.wxParse('rich_text', 'html', rich_text, this);
     });
+  },
+  onShareAppMessage() {
+    wx.showShareMenu();
+    console.log(app.share_path());
+    return { path: app.share_path() };
   }
-})
+});
