@@ -41,7 +41,7 @@ Page({
   // 格式化通过二维码扫描进来的链接
   q_format(q) {
     q = decodeURIComponent(q);
-    q = q.replace(app.my_config.base_url + '/', '').split('?');
+    q = q.replace(app.my_config.base_url, '').split('?');
     let page = q[0], search = q[1];
 
     return search ? `pages/${page}/${page}?${search}` : `pages/${page}/${page}`;
