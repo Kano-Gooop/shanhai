@@ -117,5 +117,10 @@ Page({
         complete();
       }
     });
+  },
+  onShareAppMessage() {
+    wx.showShareMenu();
+    console.log(app.share_path());
+    return { path: app.share_path() };
   }
 });
